@@ -23,6 +23,10 @@ return {
 				-- Java
 				null_ls.builtins.formatting.google_java_format,
 				null_ls.builtins.diagnostics.checkstyle,
+
+				-- Kotlin
+				null_ls.builtins.formatting.ktfmt,
+				null_ls.builtins.formatting.ktlint,
 			},
 		})
 		vim.keymap.set("n", "<Space>fd", vim.lsp.buf.format, {})

@@ -1,9 +1,6 @@
 return {
 	{
-		"mason-org/mason-nvim",
-		config = function()
-			require("mason").setup()
-		end,
+		"mason-org/mason.nvim",
 	},
 
 	{
@@ -33,6 +30,7 @@ return {
 			vim.lsp.enable("jsonls")
 			vim.lsp.enable("jdtls")
 			vim.lsp.enable("clang")
+			vim.lsp.enable("kotlin_language_server")
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "para mais informacoes, ecrever :h vim.lsp.buf" })
 			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "" })
